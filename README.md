@@ -14,6 +14,10 @@
   </p>
 </div>
 
+## Monitoring with Grafana of CI/CD deployment using the Jenkins
+
+![image](https://github.com/user-attachments/assets/c3729ffe-1653-4048-a093-92e9d17b6900)
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -81,9 +85,9 @@
 ## Install with Docker
 
 ```sh
-docker build --build-arg TMDB_V3_API_KEY=your_api_key_here -t netflix-clone .
+docker build --build-arg TMDB_V3_API_KEY=your_api_key_here -t your-images-netflix-clone-name .
 
-docker run --name netflix-clone-website --rm -d -p 80:80 netflix-clone
+docker run --name netflix-clone-website --rm -d -p 80:80 your-images-netflix-clone-name
 ```
 
 ## Todo
@@ -93,3 +97,6 @@ docker run --name netflix-clone-website --rm -d -p 80:80 netflix-clone
 - Replace bundler([Vite](https://vitejs.dev/guide)) with [Turbopack](https://turbo.build/pack/docs/why-turbopack). Turbopack is introduced in Next.js conf recently. It's very fast but it's nor ready to use right now. it just support Next.js, and they plan to support all others as soon as possible. so if it's ready to use, replace [Vite](https://vitejs.dev/guide) with [Turbopack](https://turbo.build/pack/docs/why-turbopack).
 - Add accessibilities for better UX.
 - Add Tests.
+
+
+
