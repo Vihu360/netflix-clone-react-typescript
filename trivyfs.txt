@@ -1,0 +1,33 @@
+
+For OSS Maintainers: VEX Notice
+--------------------------------
+If you're an OSS maintainer and Trivy has detected vulnerabilities in your project that you believe are not actually exploitable, consider issuing a VEX (Vulnerability Exploitability eXchange) statement.
+VEX allows you to communicate the actual status of vulnerabilities in your project, improving security transparency and reducing false positives for your users.
+Learn more and start using VEX: https://aquasecurity.github.io/trivy/v0.54/docs/supply-chain/vex/repo#publishing-vex-documents
+
+To disable this notice, set the TRIVY_DISABLE_VEX_NOTICE environment variable.
+
+
+package-lock.json (npm)
+=======================
+Total: 4 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 2, CRITICAL: 0)
+
+┌─────────┬────────────────┬──────────┬────────┬───────────────────┬─────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│ Library │ Vulnerability  │ Severity │ Status │ Installed Version │                Fixed Version                │                            Title                             │
+├─────────┼────────────────┼──────────┼────────┼───────────────────┼─────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ postcss │ CVE-2023-44270 │ MEDIUM   │ fixed  │ 8.4.18            │ 8.4.31                                      │ An issue was discovered in PostCSS before 8.4.31. The        │
+│         │                │          │        │                   │                                             │ vulnerability af ......                                      │
+│         │                │          │        │                   │                                             │ https://avd.aquasec.com/nvd/cve-2023-44270                   │
+├─────────┼────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ vite    │ CVE-2023-34092 │ HIGH     │        │ 3.2.2             │ 2.9.16, 3.2.7, 4.0.5, 4.1.5, 4.2.3, 4.3.9   │ Vite Server Options (server.fs.deny) can be bypassed using   │
+│         │                │          │        │                   │                                             │ double forward-slash (//)                                    │
+│         │                │          │        │                   │                                             │ https://avd.aquasec.com/nvd/cve-2023-34092                   │
+│         ├────────────────┤          │        │                   ├─────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│         │ CVE-2024-23331 │          │        │                   │ 2.9.17, 3.2.8, 4.5.2, 5.0.12                │ Vite dev server option `server.fs.deny` can be bypassed when │
+│         │                │          │        │                   │                                             │ hosted on case-insensitive...                                │
+│         │                │          │        │                   │                                             │ https://avd.aquasec.com/nvd/cve-2024-23331                   │
+│         ├────────────────┼──────────┤        │                   ├─────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│         │ CVE-2024-31207 │ MEDIUM   │        │                   │ 2.9.18, 3.2.10, 4.5.3, 5.0.13, 5.1.7, 5.2.6 │ vitejs: "server.fs.deny" configuration does not deny         │
+│         │                │          │        │                   │                                             │ requests that include patterns                               │
+│         │                │          │        │                   │                                             │ https://avd.aquasec.com/nvd/cve-2024-31207                   │
+└─────────┴────────────────┴──────────┴────────┴───────────────────┴─────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘

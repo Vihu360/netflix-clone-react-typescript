@@ -1,0 +1,59 @@
+
+For OSS Maintainers: VEX Notice
+--------------------------------
+If you're an OSS maintainer and Trivy has detected vulnerabilities in your project that you believe are not actually exploitable, consider issuing a VEX (Vulnerability Exploitability eXchange) statement.
+VEX allows you to communicate the actual status of vulnerabilities in your project, improving security transparency and reducing false positives for your users.
+Learn more and start using VEX: https://aquasecurity.github.io/trivy/v0.54/docs/supply-chain/vex/repo#publishing-vex-documents
+
+To disable this notice, set the TRIVY_DISABLE_VEX_NOTICE environment variable.
+
+
+vihu360/netflix:latest (alpine 3.19.3)
+======================================
+Total: 14 (UNKNOWN: 0, LOW: 0, MEDIUM: 12, HIGH: 2, CRITICAL: 0)
+
+┌─────────┬───────────────┬──────────┬────────┬───────────────────┬───────────────┬───────────────────────────────────────────────────────┐
+│ Library │ Vulnerability │ Severity │ Status │ Installed Version │ Fixed Version │                         Title                         │
+├─────────┼───────────────┼──────────┼────────┼───────────────────┼───────────────┼───────────────────────────────────────────────────────┤
+│ curl    │ CVE-2024-2398 │ HIGH     │ fixed  │ 8.5.0-r0          │ 8.7.1-r0      │ curl: HTTP/2 push headers memory-leak                 │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2398             │
+│         ├───────────────┼──────────┤        │                   ├───────────────┼───────────────────────────────────────────────────────┤
+│         │ CVE-2024-0853 │ MEDIUM   │        │                   │ 8.6.0-r0      │ curl: OCSP verification bypass with TLS session reuse │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-0853             │
+│         ├───────────────┤          │        │                   ├───────────────┼───────────────────────────────────────────────────────┤
+│         │ CVE-2024-2004 │          │        │                   │ 8.7.1-r0      │ curl: Usage of disabled protocol                      │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2004             │
+│         ├───────────────┤          │        │                   │               ├───────────────────────────────────────────────────────┤
+│         │ CVE-2024-2379 │          │        │                   │               │ curl: QUIC certificate check bypass with wolfSSL      │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2379             │
+│         ├───────────────┤          │        │                   │               ├───────────────────────────────────────────────────────┤
+│         │ CVE-2024-2466 │          │        │                   │               │ curl: TLS certificate check bypass with mbedTLS       │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2466             │
+│         ├───────────────┤          │        │                   ├───────────────┼───────────────────────────────────────────────────────┤
+│         │ CVE-2024-6197 │          │        │                   │ 8.9.0-r0      │ curl: freeing stack buffer in utf8asn1str             │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-6197             │
+│         ├───────────────┤          │        │                   │               ├───────────────────────────────────────────────────────┤
+│         │ CVE-2024-6874 │          │        │                   │               │ curl: macidn punycode buffer overread                 │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-6874             │
+├─────────┼───────────────┼──────────┤        │                   ├───────────────┼───────────────────────────────────────────────────────┤
+│ libcurl │ CVE-2024-2398 │ HIGH     │        │                   │ 8.7.1-r0      │ curl: HTTP/2 push headers memory-leak                 │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2398             │
+│         ├───────────────┼──────────┤        │                   ├───────────────┼───────────────────────────────────────────────────────┤
+│         │ CVE-2024-0853 │ MEDIUM   │        │                   │ 8.6.0-r0      │ curl: OCSP verification bypass with TLS session reuse │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-0853             │
+│         ├───────────────┤          │        │                   ├───────────────┼───────────────────────────────────────────────────────┤
+│         │ CVE-2024-2004 │          │        │                   │ 8.7.1-r0      │ curl: Usage of disabled protocol                      │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2004             │
+│         ├───────────────┤          │        │                   │               ├───────────────────────────────────────────────────────┤
+│         │ CVE-2024-2379 │          │        │                   │               │ curl: QUIC certificate check bypass with wolfSSL      │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2379             │
+│         ├───────────────┤          │        │                   │               ├───────────────────────────────────────────────────────┤
+│         │ CVE-2024-2466 │          │        │                   │               │ curl: TLS certificate check bypass with mbedTLS       │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-2466             │
+│         ├───────────────┤          │        │                   ├───────────────┼───────────────────────────────────────────────────────┤
+│         │ CVE-2024-6197 │          │        │                   │ 8.9.0-r0      │ curl: freeing stack buffer in utf8asn1str             │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-6197             │
+│         ├───────────────┤          │        │                   │               ├───────────────────────────────────────────────────────┤
+│         │ CVE-2024-6874 │          │        │                   │               │ curl: macidn punycode buffer overread                 │
+│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-6874             │
+└─────────┴───────────────┴──────────┴────────┴───────────────────┴───────────────┴───────────────────────────────────────────────────────┘
